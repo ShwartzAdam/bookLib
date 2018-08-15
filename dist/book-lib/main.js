@@ -170,7 +170,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n\n}\n"
+module.exports = ".container-fluid {\n  margin-top: 120px;\n}\n"
 
 /***/ }),
 
@@ -181,7 +181,7 @@ module.exports = ".container {\n\n}\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-add-book (notify)=\"onNotifyClicked($event)\"></app-add-book>\n<div class=\"container\">\n  <app-book *ngFor=\"let book of arrBooks\"\n            [book]=\"book\"\n            (bookObj)=\"onObject($event)\">\n  </app-book>\n</div>\n<app-edit-book [editBook]=\"editBook\" (notify)=\"onNotifyClicked($event)\" ></app-edit-book>\n<app-remove-book [removeBook]=\"deleteBook\" (notify)=\"onNotifyClicked($event)\"></app-remove-book>\n\n\n\n\n"
+module.exports = "<app-add-book (notify)=\"onNotifyClicked($event)\"></app-add-book>\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <app-book class=\"col-auto\" *ngFor=\"let book of arrBooks\"\n              [book]=\"book\"\n              (bookObj)=\"onObject($event)\">\n    </app-book>\n  </div>\n</div>\n<app-edit-book [editBook]=\"editBook\" (notify)=\"onNotifyClicked($event)\" ></app-edit-book>\n<app-remove-book [removeBook]=\"deleteBook\" (notify)=\"onNotifyClicked($event)\"></app-remove-book>\n\n\n\n\n"
 
 /***/ }),
 
@@ -277,7 +277,7 @@ var BookListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".book {\n  position: relative;\n  flex: 0 0 200px;\n  margin: 10px;\n  border: 1px solid #000;\n  border-radius: 10px;\n  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);\n  width: 200px;\n  height: 350px;\n  background: #86CECE;\n}\n.book h3 {\n  text-align: center;\n  margin-top:10px;\n  padding: 0 20px 20px;\n  font-size:1.3em;\n}\n.book .text {\n  position: absolute;\n  left: 0;\n  bottom: 40px;\n  text-align: center;\n  padding: 0 20px 20px;\n}\n.book .text p{\n  font-size:0.6em;\n  float:left;\n}\n.book .buttons {\n  position: absolute;\n  left: 0;\n  bottom: 10px;\n  margin:10px;\n}\n.book .buttons > button {\n  background: #090703;\n  border: 0;\n  color: white;\n  padding: 5px;\n  outline:none;\n  font-size:0.8em;\n  border-radius: 5px;\n}\n\n\n"
+module.exports = ".book {\n  position: relative;\n  margin: 10px;\n  border: 1px solid #000;\n  border-radius: 10px;\n  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);\n  width: 200px;\n  height: 350px;\n  background: #86CECE;\n}\n.book h3 {\n  text-align: center;\n  margin-top:10px;\n  padding: 0 20px 20px;\n  font-size:1.3em;\n}\n.book .text {\n  position: absolute;\n  left: 0;\n  bottom: 40px;\n  text-align: center;\n  padding: 0 20px 20px;\n}\n.book .text p{\n  font-size:0.6em;\n  float:left;\n}\n.book .buttons {\n  position: absolute;\n  left: 0;\n  bottom: 10px;\n  margin:10px;\n}\n.book .buttons > button {\n  background: #CDA349;\n  border: 1px solid #000;\n  color: white;\n  width:60px;\n  padding: 5px;\n  outline:none;\n  font-size:0.8em;\n  border-radius: 5px;\n  margin-right: 5px;\n}\n\n\n"
 
 /***/ }),
 
