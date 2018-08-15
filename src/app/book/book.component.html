@@ -1,9 +1,9 @@
 <div class="book">
   <h3>{{book.bookTitle | titlecase | removeNonEnglish }}</h3>
   <div class="text">
-    <p>Author: <span>{{book.authorName}}</span></p>
-    <p>Published Date: <span>{{book.publishedDate}}</span></p>
-    <p>ID: <span>{{book.id}} </span></p>
+    <p class="text-left">Author: <strong>{{book.authorName}}</strong></p>
+    <p class="text-left">Published Date: <strong>{{book.publishedDate}}</strong></p>
+    <p class="text-left">ID: <strong>{{book.id}} </strong></p>
   </div>
   <div class="buttons">
     <button (click)="editBook()">edit</button>
