@@ -1,6 +1,5 @@
 .book {
   position: relative;
-  flex: 0 0 200px;
   margin: 10px;
   border: 1px solid #000;
   border-radius: 10px;
@@ -33,13 +32,15 @@
   margin:10px;
 }
 .book .buttons > button {
-  background: #090703;
-  border: 0;
+  background: #CDA349;
+  border: 1px solid #000;
   color: white;
+  width:60px;
   padding: 5px;
   outline:none;
   font-size:0.8em;
   border-radius: 5px;
+  margin-right: 5px;
 }
 
 

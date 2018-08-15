@@ -1,9 +1,11 @@
 <app-add-book (notify)="onNotifyClicked($event)"></app-add-book>
-<div class="container">
-  <app-book *ngFor="let book of arrBooks"
-            [book]="book"
-            (bookObj)="onObject($event)">
-  </app-book>
+<div class="container-fluid">
+  <div class="row">
+    <app-book class="col-auto" *ngFor="let book of arrBooks"
+              [book]="book"
+              (bookObj)="onObject($event)">
+    </app-book>
+  </div>
 </div>
 <app-edit-book [editBook]="editBook" (notify)="onNotifyClicked($event)" ></app-edit-book>
 <app-remove-book [removeBook]="deleteBook" (notify)="onNotifyClicked($event)"></app-remove-book>

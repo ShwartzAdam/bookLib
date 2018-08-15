@@ -1,2 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~ngx-smart-modal/ngx-smart-modal.css";
+
+body{
+  background: #D6E3E0 !important;
+}
