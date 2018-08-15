@@ -1,0 +1,50 @@
+button {
+  border: 0;
+  color: white;
+  padding: 10px;
+  outline:none;
+}
+h1{
+  text-align: center;
+  font-size:1.5em;
+}
+.add-button{
+  background-color: #CDA349 !important;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 0px 0px 10px 0px;
+  padding:20px;
+  margin-top:50px;
+}
+.modal-buttons{
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+.modal-buttons > #left {
+  background: red;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.modal-buttons > #right {
+  background: green;
+  position: absolute;
+  border-radius: 20px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.control-label.required:after {
+  color: #d00;
+  content: "*";
+  position: relative;
+  margin-left: 5px;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+

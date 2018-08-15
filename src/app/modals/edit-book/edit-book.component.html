@@ -1,0 +1,41 @@
+<ngx-smart-modal #editModal identifier="editModal">
+  <h1>Edit An Existing Book </h1>
+  <form [formGroup]="formGroup">
+    <div class="form-group" [ngClass]="displayFieldCss('id')">
+      <label for="id" class="control-label required">ID</label>
+      <input id="id" type="text" class="form-control" formControlName="id" [(ngModel)]="model.id" />
+      <app-field-error-display
+        [displayError]="isFieldValid('id')"
+        errorMsg="Please insert a book id">
+      </app-field-error-display>
+    </div>
+    <div class="form-group" [ngClass]="displayFieldCss('authorName')">
+      <label for="authorName" class="control-label required">Author Name</label>
+      <input id="authorName" type="text" class="form-control" formControlName="authorName" [(ngModel)]="model.authorName" />
+      <app-field-error-display
+        [displayError]="isFieldValid('authorName')"
+        errorMsg="Please insert the author name">
+      </app-field-error-display>
+    </div>
+    <div class="form-group" [ngClass]="displayFieldCss('publishedDate')">
+      <label for="publishedDate" class="control-label required">Published Date</label>
+      <input id="publishedDate" type="date" class="form-control" formControlName="publishedDate" [(ngModel)]="model.publishedDate" />
+      <app-field-error-display
+        [displayError]="isFieldValid('publishedDate')"
+        errorMsg="Please insert proper date MM/DD/YYYY">
+      </app-field-error-display>
+    </div>
+    <div class="form-group" [ngClass]="displayFieldCss('bookTitle')">
+      <label for="bookTitle" class="control-label required">Book Title</label>
+      <input id="bookTitle" type="text" class="form-control" formControlName="bookTitle" [(ngModel)]="model.bookTitle" />
+      <app-field-error-display
+        [displayError]="isFieldValid('bookTitle')"
+        errorMsg="{{errorMessage}}">
+      </app-field-error-display>
+    </div>
+    <div class="modal-buttons">
+      <button id="left" (click)="action('Close')">Close</button>
+      <button id="right" (click)="action('Ok')">Ok</button>
+    </div>
+  </form>
+</ngx-smart-modal>

@@ -1,0 +1,31 @@
+button {
+  border: 0;
+  color: white;
+  padding: 10px;
+  margin-bottom:10px;
+  border-radius: 20px;
+  outline:none;
+}
+h1{
+  text-align: center;
+  font-size:1.5em;
+}
+.modal-buttons{
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+.modal-buttons > #left {
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.modal-buttons > #right {
+  background: green;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

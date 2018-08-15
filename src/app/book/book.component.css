@@ -1,0 +1,45 @@
+.book {
+  position: relative;
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  width: 200px;
+  height: 350px;
+  background: #86CECE;
+}
+.book h3 {
+  text-align: center;
+  margin-top:10px;
+  padding: 0 20px 20px;
+  font-size:1.3em;
+}
+.book .text {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  text-align: center;
+  padding: 0 20px 20px;
+}
+.book .text p{
+  font-size:0.6em;
+  float:left;
+}
+.book .buttons {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  margin:10px;
+}
+.book .buttons > button {
+  background: #090703;
+  border: 0;
+  color: white;
+  padding: 5px;
+  outline:none;
+  font-size:0.8em;
+  border-radius: 5px;
+}
+
+
