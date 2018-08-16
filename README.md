@@ -6,4 +6,5 @@ ADD/EDIT/DELETE a book.
 clone the rep and run : 
 
 npm install
+
 ng serve
