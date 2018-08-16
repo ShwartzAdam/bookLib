@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-top navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Book Store</a>\n</nav>\n<div id=\"main\">\n  <article>\n    <app-book-list></app-book-list>\n  </article>\n</div>\n<footer>\n</footer>\n\n"
+module.exports = "<nav class=\"navbar fixed-top navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Book Store</a>\n</nav>\n<article>\n  <app-book-list></app-book-list>\n</article>\n<footer>\n</footer>\n\n"
 
 /***/ }),
 
@@ -65,7 +65,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'book-lib';
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -170,7 +169,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container-fluid {\n  margin-top: 120px;\n}\n"
+module.exports = ".container-fluid {\n  margin-top: 120px;\n}\n.row{\n  margin-left: 55px ;\n}\n.col-auto{\n  margin-bottom: 15px;\n}\n"
 
 /***/ }),
 
@@ -288,7 +287,7 @@ module.exports = ".book {\n  position: relative;\n  margin: 10px;\n  border: 1px
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"book\">\n  <h3>{{book.bookTitle | titlecase | removeNonEnglish }}</h3>\n  <div class=\"text\">\n    <p>Author: <span>{{book.authorName}}</span></p>\n    <p>Published Date: <span>{{book.publishedDate}}</span></p>\n    <p>ID: <span>{{book.id}} </span></p>\n  </div>\n  <div class=\"buttons\">\n    <button (click)=\"editBook()\">edit</button>\n    <button (click)=\"deleteBook()\">remove</button>\n  </div>\n</div>\n\n\n"
+module.exports = "<div class=\"book\">\n  <h3>{{book.bookTitle | titlecase | removeNonEnglish }}</h3>\n  <div class=\"text\">\n    <p class=\"text-left\">Author: <strong>{{book.authorName}}</strong></p>\n    <p class=\"text-left\">Published Date: <strong>{{book.publishedDate}}</strong></p>\n    <p class=\"text-left\">ID: <strong>{{book.id}} </strong></p>\n  </div>\n  <div class=\"buttons\">\n    <button (click)=\"editBook()\">edit</button>\n    <button (click)=\"deleteBook()\">remove</button>\n  </div>\n</div>\n\n\n"
 
 /***/ }),
 
@@ -1060,7 +1059,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: true
 };
 /*
  * In development mode, for easier debugging, you can ignore zone related error

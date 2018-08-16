@@ -1,3 +1,9 @@
 .container-fluid {
   margin-top: 120px;
 }
+.row{
+  margin-left: 55px ;
+}
+.col-auto{
+  margin-bottom: 15px;
+}
